@@ -1,0 +1,668 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #17105c;
+    background: #ffffff;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1450px;
+    margin: 0 auto;
+}
+
+
+
+/* CABEÇALHO */
+
+.cabecalho {
+    height: 72px;
+    background: #ffffff;
+    border-bottom: 1px solid #f0edf7;
+
+    display: flex;
+    align-items: center;
+}
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    color: #1b1464;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+.marca img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+
+.marca strong {
+    color: #fa2ab4;
+}
+
+
+.menu-botoes {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+
+.botao-cadastro,
+.botao-login {
+    min-width: 135px;
+    height: 42px;
+
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+
+    background: linear-gradient(
+        90deg,
+        #7134ff,
+        #ef2abd
+    );
+}
+
+
+
+/* HERO */
+
+.hero {
+    height: 600px;
+
+    background-image: url("../img/fundo-hero.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.hero-conteudo {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+
+.hero-texto {
+    width: 43%;
+    max-width: 550px;
+}
+
+
+.hero-texto h1 {
+    margin-bottom: 22px;
+
+    color: #17105c;
+
+    font-size: 58px;
+    font-weight: 800;
+
+    line-height: 0.98;
+    letter-spacing: -2px;
+}
+
+
+.hero-texto h1 span {
+    color: #f329b4;
+}
+
+
+.hero-texto p {
+    margin-bottom: 30px;
+
+    color: #6d6482;
+
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+.botao-principal {
+    min-width: 235px;
+    height: 48px;
+
+    padding: 0 28px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 13px;
+
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+
+    background: linear-gradient(
+        90deg,
+        #ff2ab4,
+        #ee2aae
+    );
+
+    box-shadow: 0 8px 20px rgba(238, 42, 174, 0.20);
+}
+
+
+
+/* RECURSOS */
+
+.recursos {
+    padding: 75px 0 85px;
+
+    background: #f1f2f7;
+}
+
+
+.titulo-secao {
+    text-align: center;
+}
+
+
+.titulo-secao h2 {
+    margin-bottom: 15px;
+
+    color: #17105c;
+
+    font-size: 28px;
+    font-weight: 800;
+}
+
+
+.titulo-secao p {
+    color: #6d687c;
+
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+
+.recursos-grid {
+    margin-top: 50px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 80px;
+}
+
+
+.recurso {
+    text-align: center;
+}
+
+
+.imagem-recurso {
+    height: 180px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.imagem-recurso img {
+    width: 185px;
+    height: 175px;
+
+    object-fit: contain;
+}
+
+
+.recurso h3 {
+    margin-top: 10px;
+    margin-bottom: 9px;
+
+    color: #17105c;
+
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1.15;
+}
+
+
+.recurso p {
+    max-width: 270px;
+
+    margin: 0 auto;
+
+    color: #686476;
+
+    font-size: 11px;
+    line-height: 1.55;
+}
+
+
+
+/* BLOCO ROSA */
+
+.cta {
+    min-height: 470px;
+
+    padding: 60px 0;
+
+    display: flex;
+    align-items: center;
+
+    background: #ffdff2;
+}
+
+
+.cta-conteudo {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+
+    align-items: center;
+
+    gap: 50px;
+}
+
+
+.cta-texto {
+    padding-left: 15px;
+}
+
+
+.cta-texto h2 {
+    margin-bottom: 18px;
+
+    color: #17105c;
+
+    font-size: 38px;
+    font-weight: 800;
+
+    line-height: 1.1;
+}
+
+
+.cta-texto p {
+    max-width: 450px;
+
+    margin-bottom: 28px;
+
+    color: #776b83;
+
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+.cta-imagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.cta-imagem img {
+    width: 500px;
+}
+
+
+
+/* RODAPÉ */
+
+.rodape {
+    background: #ffffff;
+}
+
+
+.rodape-topo {
+    min-height: 150px;
+
+    padding: 30px 0;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+
+    gap: 60px;
+}
+
+
+.rodape-marca .marca {
+    font-size: 17px;
+}
+
+
+.rodape-marca .marca img {
+    width: 48px;
+    height: 48px;
+}
+
+
+.rodape-marca p {
+    margin-top: 5px;
+
+    color: #77717e;
+
+    font-size: 10px;
+}
+
+
+.rodape-coluna {
+    display: flex;
+    flex-direction: column;
+
+    gap: 6px;
+}
+
+
+.rodape-coluna h4 {
+    margin-bottom: 5px;
+
+    color: #17105c;
+
+    font-size: 11px;
+}
+
+
+.rodape-coluna a {
+    color: #77717e;
+
+    font-size: 10px;
+}
+
+
+.rodape-baixo {
+    min-height: 48px;
+
+    border-top: 1px solid #ece9f0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: #89838e;
+
+    font-size: 9px;
+}
+
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .container {
+        width: calc(100% - 30px);
+    }
+
+
+    /* CABEÇALHO */
+
+    .cabecalho {
+        height: 65px;
+    }
+
+
+    .marca {
+        font-size: 13px;
+    }
+
+
+    .marca img {
+        width: 35px;
+        height: 35px;
+    }
+
+
+    .menu-botoes {
+        gap: 6px;
+    }
+
+
+    .botao-cadastro,
+    .botao-login {
+        min-width: auto;
+        height: 33px;
+
+        padding: 0 10px;
+
+        font-size: 9px;
+    }
+
+
+
+    /* HERO */
+
+    .hero {
+        height: 520px;
+
+        background-position: 59% center;
+    }
+
+
+    .hero-conteudo {
+        align-items: flex-start;
+    }
+
+
+    .hero-texto {
+        width: 70%;
+        max-width: 300px;
+
+        padding-top: 75px;
+    }
+
+
+    .hero-texto h1 {
+        margin-bottom: 16px;
+
+        font-size: 35px;
+        line-height: 1;
+
+        letter-spacing: -1px;
+    }
+
+
+    .hero-texto p {
+        margin-bottom: 20px;
+
+        font-size: 10px;
+        line-height: 1.5;
+    }
+
+
+    .botao-principal {
+        min-width: 165px;
+        height: 40px;
+
+        padding: 0 16px;
+
+        font-size: 10px;
+    }
+
+
+
+    /* RECURSOS */
+
+    .recursos {
+        padding: 50px 0 60px;
+    }
+
+
+    .titulo-secao h2 {
+        font-size: 22px;
+        line-height: 1.2;
+    }
+
+
+    .titulo-secao p {
+        max-width: 340px;
+
+        margin: 0 auto;
+
+        font-size: 10px;
+    }
+
+
+    .desktop {
+        display: none;
+    }
+
+
+    .recursos-grid {
+        margin-top: 35px;
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+
+    .imagem-recurso {
+        height: 145px;
+    }
+
+
+    .imagem-recurso img {
+        width: 150px;
+        height: 145px;
+    }
+
+
+    .recurso h3 {
+        font-size: 15px;
+    }
+
+
+    .recurso p {
+        max-width: 280px;
+
+        font-size: 10px;
+    }
+
+
+
+    /* BLOCO ROSA */
+
+    .cta {
+        min-height: auto;
+
+        padding: 50px 0 35px;
+    }
+
+
+    .cta-conteudo {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+        text-align: center;
+    }
+
+
+    .cta-texto {
+        padding-left: 0;
+    }
+
+
+    .cta-texto h2 {
+        font-size: 29px;
+    }
+
+
+    .cta-texto p {
+        max-width: 330px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        font-size: 11px;
+    }
+
+
+    .cta-imagem img {
+        width: 360px;
+        max-width: 100%;
+    }
+
+
+
+    /* RODAPÉ */
+
+    .rodape-topo {
+        padding: 30px 0;
+
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+        text-align: center;
+    }
+
+
+    .rodape-marca .marca {
+        justify-content: center;
+    }
+
+
+    .rodape-coluna {
+        align-items: center;
+    }
+
+
+    .rodape-baixo {
+        padding: 15px 0;
+
+        flex-direction: column;
+        justify-content: center;
+
+        gap: 6px;
+
+        text-align: center;
+    }
+
+}

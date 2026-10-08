@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatic Fit</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/landing.css') }}">
+</head>
+
+<body>
+
+<!-- CABEÇALHO -->
+
+<header class="cabecalho">
+    <div class="container menu">
+
+        <a href="{{ url_for('index') }}" class="marca">
+            <img src="{{ url_for('static', filename='img/logo.png') }}"
+                 alt="Automatic Fit">
+
+            <span>Automatic <strong>Fit</strong></span>
+        </a>
+
+        <div class="menu-botoes">
+
+            <a href="{{ url_for('cadastro') }}"
+               class="botao-cadastro">
+                + Cadastre-se
+            </a>
+
+            <a href="{{ url_for('login') }}"
+               class="botao-login">
+                Login
+            </a>
+
+        </div>
+    </div>
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+    <div class="container hero-conteudo">
+
+        <div class="hero-texto">
+
+            <h1>
+                Gerencie sua<br>
+                academia de<br>
+                forma
+                <span>simples e<br>organizada</span>
+            </h1>
+
+            <p>
+                Controle aulas, horários,
+                inscrições e vagas em um só lugar.
+            </p>
+
+            <a href="{{ url_for('login') }}"
+               class="botao-principal">
+                Entrar no sistema
+            </a>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- RECURSOS -->
+
+<section class="recursos" id="recursos">
+    <div class="container">
+
+        <div class="titulo-secao">
+
+            <h2>
+                Tudo o que você precisa para organizar suas aulas
+            </h2>
+
+            <p>
+                O Automatic Fit facilita o gerenciamento de modalidades,
+                aulas, professores,<br class="desktop">
+                horários e inscrições, ajudando alunos e administradores
+                a terem uma<br class="desktop">
+                experiência mais organizada.
+            </p>
+
+        </div>
+
+
+        <div class="recursos-grid">
+
+            <div class="recurso">
+
+                <div class="imagem-recurso">
+                    <img src="{{ url_for('static', filename='img/grade-aulas.png') }}"
+                         alt="Grade de aulas">
+                </div>
+
+                <h3>Visualize a grade de aulas</h3>
+
+                <p>
+                    Consulte os dias, horários,
+                    professores, vagas e cadastre-se
+                    nas aulas disponíveis.
+                </p>
+
+            </div>
+
+
+            <div class="recurso">
+
+                <div class="imagem-recurso">
+                    <img src="{{ url_for('static', filename='img/inscricao.png') }}"
+                         alt="Inscrição">
+                </div>
+
+                <h3>Inscreva-se em poucos passos</h3>
+
+                <p>
+                    O aluno pode escolher uma aula
+                    e realizar sua inscrição enquanto
+                    houver vagas disponíveis.
+                </p>
+
+            </div>
+
+
+            <div class="recurso">
+
+                <div class="imagem-recurso">
+                    <img src="{{ url_for('static', filename='img/controle-vagas.png') }}"
+                         alt="Controle de vagas">
+                </div>
+
+                <h3>Controle automático de vagas</h3>
+
+                <p>
+                    A quantidade de vagas é atualizada
+                    automaticamente conforme novas
+                    inscrições ou cancelamentos.
+                </p>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- BLOCO ROSA -->
+
+<section class="cta">
+    <div class="container cta-conteudo">
+
+        <div class="cta-texto">
+
+            <h2>
+                Pronto para organizar<br>
+                suas aulas?
+            </h2>
+
+            <p>
+                Acesse o Automatic Fit e tenha mais
+                controle sobre aulas, horários e inscrições.
+            </p>
+
+            <a href="{{ url_for('login') }}"
+               class="botao-principal">
+                Acessar Automatic Fit
+            </a>
+
+        </div>
+
+
+        <div class="cta-imagem">
+
+            <img src="{{ url_for('static', filename='img/responsivo.png') }}"
+                 alt="Automatic Fit responsivo">
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- RODAPÉ -->
+
+<footer class="rodape">
+
+    <div class="container rodape-topo">
+
+        <div class="rodape-marca">
+
+            <div class="marca">
+
+                <img src="{{ url_for('static', filename='img/logo.png') }}"
+                     alt="Automatic Fit">
+
+                <span>Automatic <strong>Fit</strong></span>
+
+            </div>
+
+            <p>Gestão simples, rápida e organizada.</p>
+
+        </div>
+
+
+        <div class="rodape-coluna">
+
+            <h4>Navegação</h4>
+
+            <a href="{{ url_for('index') }}">Início</a>
+
+            <a href="#recursos">Recursos</a>
+
+            <a href="{{ url_for('cadastro') }}">Cadastro</a>
+
+        </div>
+
+
+        <div class="rodape-coluna">
+
+            <h4>Informações</h4>
+
+            <a href="{{ url_for('login') }}">
+                Acessar sistema
+            </a>
+
+            <a href="{{ url_for('cadastro') }}">
+                Criar conta
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="container rodape-baixo">
+
+        <span>
+            © 2026 Automatic Fit — Todos os direitos reservados.
+        </span>
+
+        <span>
+            Gerenciador de aulas e modalidades
+        </span>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

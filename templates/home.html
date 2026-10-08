@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Automatic Fit</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f2fa;
+            color: #191250;
+        }
+
+        .home {
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card {
+            width: 100%;
+            max-width: 500px;
+            padding: 40px 30px;
+            background: white;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 35px #00000012;
+        }
+
+        .logo {
+            width: 90px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 28px;
+        }
+
+        p {
+            color: #77717e;
+            margin-bottom: 25px;
+        }
+
+        .botao {
+            display: block;
+            padding: 14px;
+            margin-top: 12px;
+            border-radius: 10px;
+            background: linear-gradient(90deg, #6415ff, #fa2ab5);
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .sair {
+            background: #e8eaf1;
+            color: #191250;
+        }
+
+        @media (max-width: 700px) {
+            .card {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 23px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<main class="home">
+
+    <div class="card">
+
+        <img class="logo"
+             src="{{ url_for('static', filename='img/logo.png') }}"
+             alt="Automatic Fit">
+
+        <h1>Olá {{ usuario }}</h1>
+
+        <p>Você está na Home do perfil {{ perfil }}.</p>
+
+        {% if perfil == 'ADMINISTRADOR' %}
+
+            <a href="{{ url_for('usuarios') }}" class="botao">
+                Gerenciar Usuários
+            </a>
+
+        {% endif %}
+
+        <a href="{{ url_for('logout') }}" class="botao sair">
+            Sair
+        </a>
+
+    </div>
+
+</main>
+
+</body>
+</html>
